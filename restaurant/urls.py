@@ -5,7 +5,7 @@ from .views import (index, MenuItemView, SingleMenuItemView, BookingViewSet)
 
 
 router = DefaultRouter()
-router.register(r'tables', BookingViewSet)
+router.register(r'tables', BookingViewSet, basename="booking")
 
 
 urlpatterns = [
